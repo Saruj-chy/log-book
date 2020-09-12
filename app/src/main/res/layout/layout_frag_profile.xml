@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative"
+            android:layout_margin="14dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/imgV_profileImg"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/img1"
+                android:scaleType="centerCrop"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="TODO"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:id="@+id/tv_profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imgV_profileImg"
+                android:text="Profile Name"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/tv_activeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profileName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/imgV_profileImg"
+                android:text="Active"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/statusBg"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_toRightOf="@+id/imgV_profileImg"
+                android:layout_alignBottom="@+id/imgV_profileImg"
+                android:layout_marginStart="-20dp"
+                android:layout_marginBottom="-2dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#FFFF"
+                app:civ_border_width="10dp"
+                android:layout_marginLeft="-20dp" />
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgV_activeIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_toRightOf="@+id/imgV_profileImg"
+                android:layout_alignBottom="@+id/imgV_profileImg"
+                android:layout_marginStart="-17dp"
+                android:layout_marginBottom="1dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#00C853"
+                app:civ_border_width="10dp"
+                android:layout_marginLeft="-17dp" />
+        </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtText_statusUpdate"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/grad_update_status"
+        android:hint="Update your status"
+        android:paddingStart="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/edtText_statusUpdate"
+        android:layout_marginRight="16dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic1"
+            android:src="@drawable/ic_dont_disturb"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dntDisturb"
+            android:text="Do not disturb"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_toEndOf="@+id/ic1"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/ic1"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/relative1"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic2"
+            android:src="@drawable/ic_onlineoffline"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_setYouAway"
+            android:text="Set yourself as away"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_toEndOf="@+id/ic2"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/ic2"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/relative2"
+        android:background="#B3B3B3"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative3"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/view"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic3"
+            android:src="@drawable/ic_saved"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_savedItems"
+            android:text="Saved items"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_toEndOf="@+id/ic3"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/ic3"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative4"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/relative3"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic4"
+            android:src="@drawable/ic_viewprofile"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_viewProfile"
+            android:text="View profile"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_toEndOf="@+id/ic4"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/ic4"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative5"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/relative4"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic5"
+            android:src="@drawable/ic_notif"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_notification"
+            android:text="Notification"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_toEndOf="@+id/ic5"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/ic5"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative6"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/relative5"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic6"
+            android:src="@drawable/ic_prefer"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_preferences"
+            android:text="Preferences"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_toEndOf="@+id/ic6"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/ic6"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

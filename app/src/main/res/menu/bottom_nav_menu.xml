@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeItem"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:orderInCategory="1"
+        />
+    <item android:id="@+id/notifyItem"
+        android:title="Notification"
+        android:icon="@drawable/ic_notify"
+        android:orderInCategory="2"
+        />
+    <item android:id="@+id/locationItem"
+        android:icon="@drawable/ic_location"
+        android:title="Location"
+        android:orderInCategory="3"
+        />
+    <item android:id="@+id/settingItem"
+        android:icon="@drawable/ic_setting"
+        android:title="Settings"
+        android:orderInCategory="5"
+        />
+
+    <item android:id="@+id/profileItem"
+        android:title="You"
+        android:icon="@drawable/ic_you"
+        android:orderInCategory="4"
+        />
+
+
+
+</menu>
