@@ -11,9 +11,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.viewpager2.Adapters.RV_Adapter_notification;
-import com.example.viewpager2.Model.NotificationModel;
-import com.example.viewpager2.R;
+
+import com.agamilabs.logbook.Adapter.RV_Adapter_notification;
+import com.agamilabs.logbook.Model.NotificationModel;
+import com.agamilabs.logbook.R;
 
 import java.util.ArrayList;
 

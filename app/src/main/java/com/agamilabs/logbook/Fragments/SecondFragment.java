@@ -24,7 +24,6 @@ public class SecondFragment extends Fragment implements BottomNavigationView.OnN
     private BottomNavigationView bottomNavigationView;
     private Toolbar toolbar;
 
-    MainActivity activity ;
     View view ;
 
     public SecondFragment() {
@@ -40,8 +39,8 @@ public class SecondFragment extends Fragment implements BottomNavigationView.OnN
 
         if (Build.VERSION.SDK_INT >= 21)
         {
-            getActivity().getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorWhite));
-            getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.colorSecondary));
+            getActivity().getWindow().setNavigationBarColor(ContextCompat.getColor(getContext(), R.color.colorWhite));
+            getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getContext(), R.color.colorSecondary));
         }//End
 
         toolbar = view.findViewById(R.id.toolbar_custom);

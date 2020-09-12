@@ -10,12 +10,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.agamilabs.logbook.Adapter.RV_Adapter_main;
+import com.agamilabs.logbook.Constant.Array_JSON;
 import com.agamilabs.logbook.Interfaces.Interface_1;
 import com.agamilabs.logbook.Model.Main_Model;
+import com.agamilabs.logbook.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -124,7 +128,7 @@ public class Fragment_Mid extends Fragment implements Interface_1 {
     @Override
     public void clickOnRvMain(String group_id, String group, String item_id, String item) {
 
-        Intent intentToRofiqAcitvity = new Intent(this.getActivity(), RofiqActivity.class);
+        Intent intentToRofiqAcitvity = new Intent(this.getActivity(), FragmentActivity.class);
 
         intentToRofiqAcitvity.putExtra("group_id", group_id);
         intentToRofiqAcitvity.putExtra("group", group);

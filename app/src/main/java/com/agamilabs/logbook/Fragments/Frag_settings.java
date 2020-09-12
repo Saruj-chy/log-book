@@ -11,9 +11,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.viewpager2.Adapters.RV_Adapter_settings;
-import com.example.viewpager2.Model.SettingsModel;
-import com.example.viewpager2.R;
+
+import com.agamilabs.logbook.Adapter.RV_Adapter_settings;
+import com.agamilabs.logbook.Model.SettingsModel;
+import com.agamilabs.logbook.R;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

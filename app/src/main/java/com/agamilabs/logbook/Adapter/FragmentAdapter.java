@@ -27,7 +27,7 @@ public class FragmentAdapter extends FragmentStatePagerAdapter {
                 SettingsFragment tab0 = new SettingsFragment() ;
                 return tab0;
             case 1:
-                SecondFragment tab1 = new SecondFragment(mActivity) ;
+                SecondFragment tab1 = new SecondFragment() ;
                 return tab1;
             case 2:
                 ThirdFragment tab2 = new ThirdFragment() ;
